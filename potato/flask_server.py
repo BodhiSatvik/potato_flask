@@ -2652,13 +2652,22 @@ def run_server(args):
     print("running at:\nlocalhost:" + str(port))
     app.run(debug=args.very_verbose, host="0.0.0.0", port=port)
 
+class Args:
+    def __init__(self) -> None:
+        self.mode = "start"
+        self.config_file = "project-hub/simple_examples/configs/simple-check-box.yaml"
+        self.port = 8000
+        self.verbose = False
+        self.debug = False
+        self.very_verbose = False
 
 def main():
-    if len(sys.argv) == 1:
-        # Run task configuration script if no arguments are given.
-        return run_create_task_cli()
+    # if len(sys.argv) == 1:
+    #     # Run task configuration script if no arguments are given.
+    #     return run_create_task_cli()
 
-    args = arguments()
+    # args = arguments()
+    args = Args()
     if args.mode == 'start':
         run_server(args)
     elif args.mode == 'get':
