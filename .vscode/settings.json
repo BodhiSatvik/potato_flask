@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/eec08cd9-af4f-47dd-ad92-6dcbd67fe8df/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/potato-annotate",
+    "appService.deploySubpath": "."
+}

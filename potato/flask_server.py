@@ -2655,7 +2655,7 @@ def run_server(args):
 class Args:
     def __init__(self) -> None:
         self.mode = "start"
-        self.config_file = "project-hub/simple_examples/configs/simple-check-box.yaml"
+        self.config_file = "project-hub/subreddit/configs/Q1.yaml"
         self.port = 8000
         self.verbose = False
         self.debug = False
